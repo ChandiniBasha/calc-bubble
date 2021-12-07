@@ -1,0 +1,84 @@
+@import "./colors";
+
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: $seablue;
+  
+
+  #calculator {
+    width: 345px;
+    border-radius: 5px;
+    font-family: monospace;
+    background: azure;
+    border: 2px $solid-black;
+
+  .input {
+    height: 100px;
+    border: none;
+    
+
+    .display{
+      height: 100px;
+      width: 340px;
+      text-align: right;
+      font-size: 40px;
+      border: none;
+      border-bottom: 2px $solid-black;
+    }
+  }
+}
+  #keyboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    grid-gap: 12px;
+    
+  }
+  .operator,
+  .number,
+  .empty {
+    width: 60px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  .number,
+  .empty {
+    background-color: #eaedef;
+  }
+  .number,
+  .operator {
+    cursor: pointer;
+  }
+
+  .number:hover {
+    background: gray;
+  }
+  
+  .operator{
+    background: gray;
+    font-size: 25px;
+  }
+  .operator:hover{
+    background: white;
+  }
+
+  .is-clear, .is-zero{
+    grid-column: span 3;
+    width: 220px;
+    background: $light-green;
+  }
+
+  .is-clear:hover {
+    background: $light-red;
+  }
+}
