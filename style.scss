@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-#container {
+.container {
   min-height: 100vh;
   display: grid;
   align-items: center;
@@ -12,8 +12,8 @@
   background-color: $seablue;
   
 
-  #calculator {
-    width: 345px;
+  .calculator {
+    width: 340px;
     border-radius: 5px;
     font-family: monospace;
     background: azure;
@@ -26,7 +26,7 @@
 
     .display{
       height: 100px;
-      width: 340px;
+      width: 335px;
       text-align: right;
       font-size: 40px;
       border: none;
@@ -34,12 +34,11 @@
     }
   }
 }
-  #keyboard {
+  .keyboard {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     padding: 20px;
-    grid-gap: 12px;
+    grid-gap: 15px;
     
   }
   .operator,
@@ -49,7 +48,7 @@
     height: 60px;
     font-weight: bold;
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   .number,
   .empty {
